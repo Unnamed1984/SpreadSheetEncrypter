@@ -3,11 +3,11 @@ function onOpen() {
 
     ui.createAddonMenu()
         .addSubMenu(ui.createMenu('Encode')
-            .addItem('DES', 'encodeTripleDESHandler')
+            .addItem('TripleDES', 'encodeTripleDESHandler')
             .addItem('AES', 'encodeAESHandler'))
         .addSeparator()
         .addSubMenu(ui.createMenu('Decode')
-            .addItem('DES', 'decodeTripleDESHandler')
+            .addItem('TripleDES', 'decodeTripleDESHandler')
             .addItem('AES', 'decodeAESHandler'))
         .addToUi();   
   };
