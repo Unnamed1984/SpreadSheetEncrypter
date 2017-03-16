@@ -16,8 +16,13 @@ function transformData(mode, algorythm, callback){
 			row[j] = callback(row[j], key);
 		  }
 		  catch(e){
-            var ui = SpreadsheetApp.getUi().alert("Incorrect password or decrypt method");
-            return;
+            if (e.message = "Error: Malformed UTF-8 data"){
+              var ui = SpreadsheetApp.getUi().alert("Incorrect password or decrypt method");
+              return;
+            }
+            else{
+              throw e;
+            }
 		  }
         }
       }
