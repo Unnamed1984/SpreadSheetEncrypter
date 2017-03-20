@@ -1,0 +1,16 @@
+canvas {
+    margin: 30px auto;
+    border: 2px solid blue;
+    display: block;
+}
+
+button {
+    margin: 30px auto;
+    display: block;
+}
+
+.info {
+    margin: 30px auto;
+    display: block;
+    color: #337;
+}
